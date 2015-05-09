@@ -35,12 +35,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IState.cs" />
+    <Compile Include="ICondition.cs" />
+    <Compile Include="IContext.cs" />
+    <Compile Include="IExtensible.cs" />
+    <Compile Include="IIdentifiable.cs" />
+    <Compile Include="IProperty.cs" />
     <Compile Include="IStep.cs" />
     <Compile Include="ITransition.cs" />
-    <Compile Include="ITriggable.cs" />
+    <Compile Include="ITrigger.cs" />
     <Compile Include="IWorkflow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Provider\" />
+    <Folder Include="StateControl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

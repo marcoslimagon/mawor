@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Mawor.Net.Interface
 {
-    class IState
+    interface ITrigger
     {
     }
 }

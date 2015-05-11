@@ -10,6 +10,10 @@ namespace Mawor.Net.Interface
     /// <typeparam name="T">The type of the identfication, preferred int or Guid</typeparam>
     public interface IStep<T>:IIdentifiable<T>,IExtensible
     {
-        
+        ICollection<ITransition<T>> Transitions { get; }
+
+        void AddTransition(ITransition<T> transition);
+        void RemoveTransition(ITransition<T> transition);
+        void ClearTransitions();
     }
 }

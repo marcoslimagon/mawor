@@ -10,11 +10,11 @@ namespace Mawor.Net.Interface
     /// </summary>
     /// <typeparam name="T">Type of the identity value</typeparam>
     /// <typeparam name="U">Type of the identification for the steps</typeparam>
-    public interface IWorkflow<T,U>:IIdentifiable<T>,IExtensible
+    public interface IWorkflow<T>:IStep<T>
     {
         /// <summary>
-        /// The first step of the workflow
+        /// The first step (or workflow item) of the workflow
         /// </summary>
-        IStep<U> DefaultStep { get; set; } 
+        IStep<T> DefaultStep { get; set; } 
     }
 }

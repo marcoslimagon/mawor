@@ -15,7 +15,5 @@ namespace Mawor.Net.Interface
         /// <param name="context"></param>
         /// <returns></returns>
         bool IsValid(IContext context);
-
-        //TODO: Add expression/Mechanism for validation
     }
 }

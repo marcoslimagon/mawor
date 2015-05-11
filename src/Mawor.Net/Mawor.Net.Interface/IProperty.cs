@@ -13,6 +13,7 @@ namespace Mawor.Net.Interface
         /// Value of the extended property
         /// </summary>
         object Value { get; set; }
+
         /// <summary>
         /// Name of the extended property
         /// </summary>

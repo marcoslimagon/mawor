@@ -9,21 +9,11 @@ namespace Mawor.Net.Interface
     /// </summary>
     public interface IContext:IExtensible
     {
-        object Target { get;  }
-        
-        /// <summary>
-        /// Usually 
-        /// </summary>
-        ContextType TargetType { get; }
-
-         
+        object ContextItem { get;  }
     }
 
-    public enum ContextType
+    public interface IContext<T> : IContext
     {
-        Instance,
-        Method,
-        Event,
-        Delegate
+        T ContextObject { get; }
     }
 }

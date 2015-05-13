@@ -5,6 +5,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mawor.Net.Interface", "Mawor.Net.Interface\Mawor.Net.Interface.csproj", "{E044AFE0-15BC-4C45-A0E1-7A552F0AF024}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementation", "Implementation", "{49BEE631-55B4-4017-96D1-51F890201ECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mawor.Net.Implementation.InMemory", "Mawor.Net.Implementation.InMemory\Mawor.Net.Implementation.InMemory.csproj", "{D16072F8-E5CF-4E28-AE22-C5B8B03B1C57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +19,16 @@ Global
 		{E044AFE0-15BC-4C45-A0E1-7A552F0AF024}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E044AFE0-15BC-4C45-A0E1-7A552F0AF024}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E044AFE0-15BC-4C45-A0E1-7A552F0AF024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16072F8-E5CF-4E28-AE22-C5B8B03B1C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16072F8-E5CF-4E28-AE22-C5B8B03B1C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16072F8-E5CF-4E28-AE22-C5B8B03B1C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16072F8-E5CF-4E28-AE22-C5B8B03B1C57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E044AFE0-15BC-4C45-A0E1-7A552F0AF024} = {D10923E7-1219-4972-923F-E4C2D97E9CF6}
+		{D16072F8-E5CF-4E28-AE22-C5B8B03B1C57} = {49BEE631-55B4-4017-96D1-51F890201ECF}
 	EndGlobalSection
 EndGlobal

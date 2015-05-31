@@ -1,4 +1,5 @@
 ﻿using Mawor.Net.Interface;
+using Mawor.Net.Interface.Provider;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Mawor.Net.Implementation.InMemory
     {
         public WorkflowItem()
         {
-            _extendedProperties = new Dictionary<string, IProperty>();
+            _extendedProperties = new Dictionary<string,IProperty>();
         }
 
         #region IExtensible Members

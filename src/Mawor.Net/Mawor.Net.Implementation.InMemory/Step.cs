@@ -5,26 +5,32 @@ using System.Text;
 
 namespace Mawor.Net.Implementation.InMemory
 {
-    class Step:WorkflowItem,IStep<Guid>
+    public class Step:WorkflowItem,IStep<Guid>
     {
+        private IList<ITransition<Guid>> _transitions;
+
+        public Step()
+        {
+            _transitions = new List<ITransition<Guid>>();
+        }
+
+        public Step(IStep<Guid> parentStep):this()
+        {
+            this.Parent = parentStep;
+        }
+
         public ICollection<ITransition<Guid>> Transitions
         {
-            get { throw new NotImplementedException(); }
+            get { return _transitions; }
         }
 
-        public void AddTransition(ITransition<Guid> transition)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void RemoveTransition(ITransition<Guid> transition)
-        {
-            throw new NotImplementedException();
-        }
 
-        public void ClearTransitions()
+
+        public IStep<Guid> Parent
         {
-            throw new NotImplementedException();
+            get;
+            set;
         }
     }
 }

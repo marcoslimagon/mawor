@@ -12,8 +12,6 @@ namespace Mawor.Net.Interface
     {
         ICollection<ITransition<T>> Transitions { get; }
 
-        void AddTransition(ITransition<T> transition);
-        void RemoveTransition(ITransition<T> transition);
-        void ClearTransitions();
+        IStep<T> Parent { get; }
     }
 }

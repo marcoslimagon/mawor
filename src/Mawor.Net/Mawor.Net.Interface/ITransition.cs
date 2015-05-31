@@ -12,12 +12,5 @@ namespace Mawor.Net.Interface
     {
         IIdentifiable<T> From { get; set; }
         IIdentifiable<T> To { get; set; }
-        
-        /// <summary>
-        /// Check if the transition is enabled or not
-        /// </summary>
-        /// <param name="context">execution context</param>
-        /// <returns>true, if the transition is enabled</returns>
-        bool IsEnabled(IContext context);
     }
 }
